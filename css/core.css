@@ -9,7 +9,7 @@ div#outer_container {
     color:#333;
     padding:8px;
     margin:24px auto;
-    border: 1px solid #99f;
+    border: 1px solid #366;
 }
 
 div#inner_container {
@@ -36,49 +36,107 @@ div#header h2 {
     font-size: 1.6em;
 }
 
-
-div#content_main {
-    width:716px;
-    padding:8px;
-    float:left;
-
-}
-
-#main_menu {
+#main_menu, .sub_menu {
+    color:#fff;
     background-color:#333;
     width: 992px;
 }
 
-#main_menu>li {
+ul#main_menu>li>p>a:link, ul#main_menu>li>p>a:active, ul#main_menu>li>p>a:visited, ul#main_menu>li>p>a:hover,
+ul.sub_menu>li>p>a:link, ul.sub_menu>li>p>a:active, ul.sub_menu>li>p>a:visited, ul.sub_menu>li>p>a:hover
+
+{
+    color: #fff;
+    text-decoration:none;
+}
+
+ul#main_menu>li>p>a:hover,
+ul.sub_menu>li>p>a:hover
+
+{
+    text-decoration:underline;
+}
+
+#main_menu>li
+{
     float:left;
     color:#fff;
     background-color:#333;
-    width:164px;
-    text-align: center;
+    text-align:left;
 }
 
-#main_menu>li>p {
+#main_menu>li>p,
+.sub_menu>li>p
+{
     padding:8px;
-    font-size: 1.2em;
-    border-width:1px 0px 1px 1px;
-    border-style: solid;
-    border-color: #333 #333 #333 #666;
+    font-size: 1.0em;
 }
 
-#main_menu>li ul {
-    background-color:#fff;
-    border-width:1px 1px 1px 1px;
-    border-style: solid;
-    border-color: #fff #333 #333 #333;
-    width:147px;
-    color:#000;
-    padding:8px;
-    position:absolute;
-    display: none;
-}    
 
-#main_menu>li ul li {
-    padding: 4px;
+.level1 {
+    background-color:#444;
+}
+.level2 {
+    background-color:#555;
+}
+
+
+
+#content_wrap {
+    background-color: #fff;
+    width:992px;
+}
+
+#content_left {
+    background-color: #fff;
+    float:left;
+    padding: 8px;
+    width: 747px;
+    border-right: 1px solid #066
+}
+
+#content_left ul {
+    margin-left: 24px;
+    list-style-type: disc;
+
+}
+
+#content_left li {
+    font-size: 0.9em;
+    line-height:1.3em;
     
+    
+}
 
+
+#content_right {
+    float:left;
+    padding: 8px;
+    width: 212px;
+    
+}
+
+#footer {
+    margin:0 4px;
+    border: 1px solid #366;
+    padding:8px;
+    background-color: #fff;
+    width:970px;
+}
+
+#footer_left {
+    background-color: #fff;
+    float:left;
+    width: 764px;
+}
+
+#footer_right {
+    float:left;
+    width: 228px;
+    background-color: #cde;  
+}
+
+#footer li {
+    font-size: 0.8em;
+    line-height: 1.2em;
 }
