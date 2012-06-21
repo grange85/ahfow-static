@@ -1,6 +1,6 @@
 body {
     background-color: #ccc;
-    
+
 }
 
 div#outer_container {
@@ -13,65 +13,86 @@ div#outer_container {
 }
 
 div#inner_container {
-    
-    
+
+
 }
 
 div#header {
-    
+
     color:#fff;
     background-color:#366;
     padding: 32px 8px;
     width:976px;
-    
+
 }
 
 
-div#header h1 {
+h1 {
     margin-right: 8px;
     font-size: 2.3em;
 }
 
-div#header h2 {
+h2 {
     font-size: 1.6em;
 }
 
-#main_menu, .sub_menu {
+h3 {
+    font-size: 1.3em;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+
+em {
+    font-style: italic;
+
+}
+
+#content_wrap p {
+    line-height: 1.4em;
+}
+
+ul.menu {
     color:#fff;
     background-color:#333;
     width: 992px;
 }
 
-ul#main_menu>li>p>a:link, ul#main_menu>li>p>a:active, ul#main_menu>li>p>a:visited, ul#main_menu>li>p>a:hover,
-ul.sub_menu>li>p>a:link, ul.sub_menu>li>p>a:active, ul.sub_menu>li>p>a:visited, ul.sub_menu>li>p>a:hover
+
+ul.menu>li>p>a:link, ul.menu>li>p>a:active, ul.menu>li>p>a:visited, ul.menu>li>p>a:hover
 
 {
     color: #fff;
     text-decoration:none;
 }
 
-ul#main_menu>li>p>a:hover,
-ul.sub_menu>li>p>a:hover
-
+ul.menu>li>p>a:hover
 {
     text-decoration:underline;
 }
 
-#main_menu>li
+ul.menu>li
 {
     float:left;
     color:#fff;
-    background-color:#333;
     text-align:left;
 }
 
-#main_menu>li>p,
-.sub_menu>li>p
+ul.menu>li>p
 {
     padding:8px;
     font-size: 1.0em;
 }
 
+.level0 {
+    background-color: #333;
+}
 
 .level1 {
     background-color:#444;
@@ -80,7 +101,9 @@ ul.sub_menu>li>p>a:hover
     background-color:#555;
 }
 
-
+ul.menu>li.active {
+    background-color: #399;
+}
 
 #content_wrap {
     background-color: #fff;
@@ -102,10 +125,7 @@ ul.sub_menu>li>p>a:hover
 }
 
 #content_left li {
-    font-size: 0.9em;
     line-height:1.3em;
-    
-    
 }
 
 
@@ -113,7 +133,7 @@ ul.sub_menu>li>p>a:hover
     float:left;
     padding: 8px;
     width: 212px;
-    
+
 }
 
 #footer {
@@ -139,4 +159,18 @@ ul.sub_menu>li>p>a:hover
 #footer li {
     font-size: 0.8em;
     line-height: 1.2em;
+}
+
+div.imagebox-right {
+    float:right;
+    margin-left: 8px;
+    padding: 16px 16px 2px 16px;
+    border: 1px solid #399;
+    background-color: #EEE;
+    text-align:center;
+}
+
+div.imagebox-right>p {
+    font-size: 0.6em;
+    font-style: italic;
 }
