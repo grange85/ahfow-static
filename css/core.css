@@ -1,6 +1,6 @@
 body {
     background-color: #ccc;
-
+    overflow-y:scroll;
 }
 
 div#outer_container {
@@ -34,6 +34,7 @@ h1 {
 
 h2 {
     font-size: 1.6em;
+    margin: 8px 0px;
 }
 
 h3 {
@@ -56,11 +57,11 @@ em {
 
 #content_wrap p {
     line-height: 1.4em;
+    font-size: 0.9em;
 }
 
 ul.menu {
     color:#fff;
-    background-color:#333;
     width: 992px;
 }
 
@@ -171,6 +172,9 @@ div.imagebox-right {
 }
 
 div.imagebox-right>p {
-    font-size: 0.6em;
     font-style: italic;
+}
+
+div#content_right ul {
+    margin: 8px 0px 16px 0px;
 }
