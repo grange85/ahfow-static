@@ -119,14 +119,15 @@ ul.menu>li.active {
     border-right: 1px solid #066
 }
 
-#content_left ul {
+#content_left>ul {
     margin-left: 24px;
     list-style-type: disc;
 
 }
 
-#content_left li {
+#content_left>ul>li {
     line-height:1.3em;
+    margin-left:24px;
 }
 
 
@@ -162,7 +163,7 @@ ul.menu>li.active {
     line-height: 1.2em;
 }
 
-div.imagebox-right {
+div.imagebox_right {
     float:right;
     margin-left: 8px;
     padding: 16px 16px 2px 16px;
@@ -171,10 +172,35 @@ div.imagebox-right {
     text-align:center;
 }
 
-div.imagebox-right>p {
+div.artist_box {
+    width:723px;
+    border: 1px solid #399;
+    background-color: #EEE;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+div.artist_box ul {
+    list-style-type:none;
+
+}
+
+div.artist_imagebox_left {
+    float:left;
+    margin-right:8px;
+}
+
+
+div.imagebox_right>p {
     font-style: italic;
 }
 
 div#content_right ul {
     margin: 8px 0px 16px 0px;
+}
+
+p.backtotop {
+    text-align:right;
+    font-size:0.7em;
+    
 }
