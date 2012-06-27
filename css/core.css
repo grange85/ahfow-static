@@ -121,13 +121,11 @@ ul.menu>li.active {
 
 #content_left>ul {
     margin-left: 24px;
-    list-style-type: disc;
 
 }
 
 #content_left>ul>li {
     line-height:1.3em;
-    margin-left:24px;
 }
 
 
