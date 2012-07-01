@@ -88,7 +88,6 @@ ul.menu>li
 ul.menu>li>p
 {
     padding:8px;
-    font-size: 1.0em;
 }
 
 .level0 {
@@ -201,4 +200,24 @@ p.backtotop {
     text-align:right;
     font-size:0.7em;
     
+}
+
+table.gigography {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.gigography th {
+    padding:4px;
+    border: 1px solid #ccc;
+    text-align:left;
+    font-weight:bold;
+    font-size: 0.9em;
+}
+
+table.gigography td {
+    padding:4px;
+    border: 1px solid #ccc;
+    text-align:left;
+    font-size: 0.9em;
 }
