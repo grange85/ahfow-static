@@ -202,12 +202,14 @@ p.backtotop {
     
 }
 
-table.gigography {
+table.gigography,
+table.discography {
     width: 100%;
     border-collapse: collapse;
 }
 
-table.gigography th {
+table.gigography th ,
+table.discography th {
     padding:4px;
     border: 1px solid #ccc;
     text-align:left;
@@ -215,7 +217,8 @@ table.gigography th {
     font-size: 0.9em;
 }
 
-table.gigography td {
+table.gigography td ,
+table.discography td {
     padding:4px;
     border: 1px solid #ccc;
     text-align:left;
