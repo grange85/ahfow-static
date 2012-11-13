@@ -41,9 +41,9 @@ ahfow.artistFormProcess = (function(){
         
         $("#"+temp[i]+"-tracks").html($("#"+temp[i]+"-trackto option").length + "/5 selected");
         if($("#"+temp[i]+"-albumvote option:checked").val()!= '--select--' ){
-            $("#"+temp[i]+"-album").html("tick");
+            $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:checked").val());
         } else {
-            $("#"+temp[i]+"-album").html("cross");
+            $("#"+temp[i]+"-album").html("not selected");
         }
     }    
 });
