@@ -40,7 +40,7 @@ ahfow.artistFormProcess = (function(){
     for(var i = 0; i<temp.length; i++) {
         
         $("#"+temp[i]+"-tracks").html($("#"+temp[i]+"-trackto option").length + "/5 selected");
-        if($("select[name="+temp[i]+"-albumvote] option:checked").val()!= '--select--' ){
+        if($("select[name="+temp[i]+"-albumvote] option:checked").attr('value')!= '--select--' ){
             $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:checked").val());
         } else {
             $("#"+temp[i]+"-album").html("not selected");
