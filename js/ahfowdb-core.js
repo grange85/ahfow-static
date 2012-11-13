@@ -75,6 +75,7 @@ $(document).ready(function() {
         console.log(filter);
         $("#"+artist+"-trackfrom option").each(function() {
             var match = $(this).text().search(new RegExp(filter, "i"));
+            console.log(match);
             if (match < 0 && $(this).text() != "--select--")  {                   
                 $(this).attr('style','display:none');
             }
