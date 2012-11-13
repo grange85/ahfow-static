@@ -68,8 +68,8 @@ $(document).ready(function() {
     });
 
     $(".trackfilter").keyup(function() {
-        console.log('keyup');
         var artist = $(this).attr('id').substring(0,$(this).attr('id').indexOf('-'));
+        console.log(artist);
         $("#"+artist+"trackfrom option:selected").removeAttr("selected");
         var filter = $(this).val();
         //alert(filter);
