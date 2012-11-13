@@ -72,7 +72,7 @@ $(document).ready(function() {
         console.log(artist);
         $("#"+artist+"trackfrom option:selected").removeAttr("selected");
         var filter = $(this).val();
-        //alert(filter);
+        console.log(filter);
         $("#"+artist+"-trackfrom option").each(function() {
             var match = $(this).text().search(new RegExp(filter, "i"));
             if (match < 0 && $(this).text() != "--select--")  {                   
