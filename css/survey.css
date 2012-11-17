@@ -10,6 +10,15 @@ root {
     display: block;
 }
 
+
+form .section {
+    cursor:pointer;
+}
+
+form .section>div {
+    cursor: default;
+}
+
 .leftselect {
     float:left;
     margin:0px;
@@ -67,6 +76,7 @@ root {
        
 }
 
+
 .messages {
     display:none;
     margin:8px 4px;
@@ -84,6 +94,16 @@ root {
     padding-top: 0px;
     padding-bottom:0px;
 }
+
+.section>div{
+    height: 350px;
+}
+
+.section p {
+    margin-bottom: 18px;
+    font-size: 0.8em;
+}
+
 
 .section>div{
     width:652px;
