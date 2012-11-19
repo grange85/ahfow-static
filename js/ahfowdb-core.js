@@ -55,6 +55,15 @@ $(document).ready(function() {
         });
         activeItem = this;
         ahfow.artistFormProcess();
+
+        $(".section input").attr("tabindex", "-1");
+        $(".section select").attr("tabindex", "-1");
+        $(".section textarea").attr("tabindex", "-1");
+        
+        $("input", this).attr("tabindex", "0");
+        $("select", this).attr("tabindex", "0");
+        $("textarea", this).attr("tabindex", "0");
+
     });
     
     
