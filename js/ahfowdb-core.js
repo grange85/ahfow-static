@@ -56,9 +56,9 @@ $(document).ready(function() {
         $(".section select").attr("tabindex", "-1");
         $(".section textarea").attr("tabindex", "-1");
         
-        $(this).find("input").attr("tabindex", "0");
-        $(this).find("select").attr("tabindex", "0");
-        $(this).find("textarea").attr("tabindex", "0");
+        $(this).find("input").attr("tabindex", "1");
+        $(this).find("select").attr("tabindex", "1");
+        $(this).find("textarea").attr("tabindex", "1");
     });
     
     
