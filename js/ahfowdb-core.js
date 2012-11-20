@@ -22,7 +22,7 @@ $(document).ready(function() {
     $("#frmSubmit").click(function(e) {
         e.preventDefault();
         for(var i = 0; i<temp.length; i++) {
-            console.log(temp[i]);
+//            console.log(temp[i]);
             var selected = $("select#"+temp[i]+"-trackto option").map(function(){
                 return $(this).val();
             }).get().join(',');
