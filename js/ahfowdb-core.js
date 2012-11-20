@@ -8,7 +8,7 @@ ahfow.artistFormProcess = (function(){
         
         $("#"+temp[i]+"-tracks").html($("#"+temp[i]+"-trackto option").length + "/5 selected");
         if($("select[name="+temp[i]+"-albumvote] option:checked").attr('value')!= '--select--' ){
-            $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:checked").innerHtml());
+            $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:checked").innerHTML());
         } else {
             $("#"+temp[i]+"-album").html("not selected");
         }
