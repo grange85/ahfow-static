@@ -6,9 +6,9 @@ ahfow.artistFormProcess = (function(){
 
     for(var i = 0; i<temp.length; i++) {
         
-        $("#"+temp[i]+"-tracks").html($("#"+temp[i]+"-trackto option").length + "/5 selected");
+        $("#"+temp[i]+"-tracks").html($("#"+temp[i]+"-trackto option").length + "/5 tracks selected");
         if($("select[name="+temp[i]+"-albumvote] option:selected").attr('value')!= '--select--' ){
-            $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:selected").html() + ' selected');
+            $("#"+temp[i]+"-album").html($("#"+temp[i]+"-albumvote option:selected").html());
         } else {
             $("#"+temp[i]+"-album").html("not selected");
         }
