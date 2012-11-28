@@ -196,3 +196,29 @@ form .section>div {
     padding:2px;
     
 }
+
+.surveyalbumbox {
+    width: 600px;
+}
+
+.surveyalbumimage {
+    float:left;
+    width:200px;
+    border:0;
+    margin:0 8px 0 0;
+    text-decoration: line-through;
+}
+
+.surveyalbumdetails {
+    padding: 8px;
+}
+
+ol {
+    list-style: decimal;
+}
+ol>li {
+    margin-left: 40px;
+}
+
+
+    
