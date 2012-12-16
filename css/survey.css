@@ -221,4 +221,21 @@ ol>li {
 }
 
 
+#survey_summary table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+#survey_summary th {
+    padding: 4px;
+    font-weight: bold;
+    border: 1px solid grey;
+}
+
+#survey_summary td {
+    padding: 4px;
+    font-weight: normal;
+    border: 1px solid grey;
+}
+
     
