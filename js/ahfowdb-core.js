@@ -22,7 +22,7 @@ $(document).ready(function() {
     $("#frmSubmit").click(function(e) {
         e.preventDefault();
         for(var i = 0; i<temp.length; i++) {
-//            console.log(temp[i]);
+            //            console.log(temp[i]);
             var selected = $("select#"+temp[i]+"-trackto option").map(function(){
                 return $(this).val();
             }).get().join(',');
@@ -62,9 +62,10 @@ $(document).ready(function() {
         $(this).find("textarea").attr("tabindex", "1");
         $(this).find("a").attr("tabindex", "1");
     });
-    
-    
-    
+
+
+
+   
     $('.trackadd').click(function(){
         var artist = $(this).attr('id').substring(0,$(this).attr('id').indexOf('-'));
         if($('#'+artist+'-trackto option').length>4){
@@ -87,5 +88,53 @@ $(document).ready(function() {
             $(this).remove();
         });
     });
+
+
+
+
+
+
+
+
+
+
+
+    $('ul.tabs').each(function(){
+        var $active, $content, $links = $(this).find('a');
+
+        // If the location.hash matches one of the links, use that as the active tab.
+        // If no match is found, use the first link as the initial active tab.
+        $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+        $active.addClass('active');
+        $content = $($active.attr('href'));
+
+        // Hide the remaining content
+        $links.not($active).each(function () {
+            $($(this).attr('href')).hide();
+        });
+
+        // Bind the click event handler
+        $(this).on('click', 'a', function(e){
+            e.preventDefault();
+            
+            // Make the old tab inactive.
+            if ($(this).attr('class')!='active') {
+                $active.removeClass('active');
+                $content.hide();
+
+                // Update the variables with the new link and content
+                $active = $(this);
+                $content = $($(this).attr('href'));
+
+                // Make the tab active.
+                $active.addClass('active');
+                $content.show();
+            }
+        });
+    });
+
+
+
+
 
 });
