@@ -10,6 +10,13 @@ root {
     display: block;
 }
 
+body {
+    font-family: Century Gothic, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
 
 form .section {
     cursor:pointer;
@@ -199,7 +206,6 @@ form .section>div {
 
 .surveyalbumbox {
     width: 600px;
-    border-bottom: 2px solid #ABC6DD;
     padding-bottom: 20px;
 }
 
@@ -223,18 +229,19 @@ ol>li {
 }
 
 
-#survey_summary table {
+#survey_results table {
     border-collapse: collapse;
     border: 1px solid grey;
+    width: 500px;
 }
 
-#survey_summary th {
+#survey_results th {
     padding: 4px;
     font-weight: bold;
     border: 1px solid grey;
 }
 
-#survey_summary td {
+#survey_results td {
     padding: 4px;
     font-weight: normal;
     border: 1px solid grey;
@@ -255,7 +262,7 @@ ol>li {
     padding: 4px;
     border-width: 2px 0px 2px 2px;
     border-style:solid;
-    border-color: #ABC6DD;
+    border-color: #000080;
     margin-bottom: 4px;
 }
 
@@ -274,29 +281,66 @@ ol>li {
     text-decoration: none;
 }
 
-
 #survey_results_menu li a.active {
-    background-color: #ABC6DD;
+    color: #fff;
+    background-color: #000080;
 }
-
-
 
 #survey_results {
     width: 700px;
     padding: 0px;
     float:left;
-    border: 4px solid #ABC6DD;
+    border: 4px solid #000080;
+    margin-bottom: 16px;
 }
 
 #survey_results h2 {
     padding: 4px;
     margin: 0px;
     height: 68px;
-    font-size: 2em;
-    background-color:#ABC6DD;
+    font-size: 32px;
+    background-color:#000080;
+    color: #fff;
     line-height: 68px;
+}
+
+#survey_results h3 {
+    padding: 4px;
+    margin: 0px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 16px;
+    font-weight: normal;
+
 }
 
 #survey_results>div>div {
     padding: 8px;
+}
+
+.surveyalbumdetails span.votes {
+    font-size: 64px;
+    color: #0A246A
+}
+
+#survey_results li.first {
+    font-size: 32px;
+    color: #0A246A;
+}
+
+#survey_results li {
+    padding: 4px;
+}
+
+.summary_section{
+    margin-bottom: 32px;
+}
+
+.album_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+
 }
