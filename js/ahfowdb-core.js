@@ -19,6 +19,21 @@ ahfow.artistFormProcess = (function(){
 $(document).ready(function() {
     var temp = new Array("galaxie_500","luna","damon_and_naomi","dean_and_britta");
     
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        pagerType: 'short',
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        captions: true,
+        slideWidth: 400,
+        controls: true,
+        adaptiveHeight: true,
+        adaptiveWidth: true
+    });
+
+
+
+    
     $("#frmSubmit").click(function(e) {
         e.preventDefault();
         for(var i = 0; i<temp.length; i++) {
