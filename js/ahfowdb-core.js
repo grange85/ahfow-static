@@ -19,19 +19,20 @@ ahfow.artistFormProcess = (function(){
 $(document).ready(function() {
     var temp = new Array("galaxie_500","luna","damon_and_naomi","dean_and_britta");
     
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        pagerType: 'short',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        captions: true,
-        slideWidth: 400,
-        controls: true,
-        adaptiveHeight: true,
-        adaptiveWidth: true
+    
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        social_tools: ' <div class="pp_social">\n\
+                            <div class="twitter">\n\
+                                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>\n\
+                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js">\n\
+                                </script>\n\
+                            </div>\n\
+                            <div class="facebook">\n\
+                                <iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&href='+location.href+'&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true">\n\
+                                </iframe>\n\
+                            </div>\n\
+                        </div>' /* html or false to disable */
     });
-
-
 
     
     $("#frmSubmit").click(function(e) {

@@ -224,3 +224,10 @@ table.discography td {
     text-align:left;
     font-size: 0.9em;
 }
+
+ul#showpics li {
+    float: left;
+    width: 154px;
+    height: 154px;
+    padding: 2px;
+}
