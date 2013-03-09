@@ -55,10 +55,21 @@ em {
 
 }
 
-#content_wrap p {
+#content_wrap p,
+#content_wrap li{
     line-height: 1.4em;
     font-size: 0.9em;
 }
+
+.richtext ul {
+    list-style-type: circle;
+    margin-left: 32px;
+}
+
+.richtext li {
+    padding-left:4px;
+}
+
 
 ul.menu {
     color:#fff;
@@ -118,6 +129,12 @@ ul.menu>li.active {
     border-right: 1px solid #066
 }
 
+#content_left p {
+margin-top:8px;
+margin-bottom:4px;
+}
+
+
 #content_left>ul {
     margin-left: 24px;
 
@@ -163,7 +180,7 @@ ul.menu>li.active {
 div.imagebox_right {
     float:right;
     margin-left: 8px;
-    padding: 16px 16px 2px 16px;
+    padding: 8px;
     border: 1px solid #399;
     background-color: #EEE;
     text-align:center;
