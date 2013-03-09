@@ -9,7 +9,7 @@ div#outer_container {
     color:#333;
     padding:8px;
     margin:24px auto;
-    border: 1px solid #366;
+    border: 1px solid #336;
 }
 
 div#inner_container {
@@ -20,15 +20,19 @@ div#inner_container {
 div#header {
 
     color:#fff;
-    background-color:#366;
-    padding: 32px 8px;
-    width:976px;
+    background-color: #000080;
+    background-image: url('http://media.fullofwishes.co.uk/images/misc/aheadfullofdata.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px;
+    width:992px;
+    height:80px;
 
 }
 
 
 h1 {
-    margin-right: 8px;
+    margin-left: -10000px;
     font-size: 2.3em;
 }
 
@@ -125,8 +129,8 @@ ul.menu>li.active {
     background-color: #fff;
     float:left;
     padding: 8px;
-    width: 747px;
-    border-right: 1px solid #066
+    width: 748px;
+/*    border-right: 1px solid #336*/
 }
 
 #content_left p {
@@ -153,8 +157,8 @@ margin-bottom:4px;
 }
 
 #footer {
-    margin:0 4px;
-    border: 1px solid #366;
+    margin:8px 4px 0px 4px;
+    border-top: 1px solid #336;
     padding:8px;
     background-color: #fff;
     width:970px;
@@ -181,14 +185,14 @@ div.imagebox_right {
     float:right;
     margin-left: 8px;
     padding: 8px;
-    border: 1px solid #399;
+    border: 1px solid #336;
     background-color: #EEE;
     text-align:center;
 }
 
 div.artist_box {
     width:723px;
-    border: 1px solid #399;
+    border: 1px solid #336;
     background-color: #EEE;
     margin-bottom: 8px;
     padding: 8px;
