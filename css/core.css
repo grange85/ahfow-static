@@ -276,6 +276,7 @@ ul#showpics li {
         background-image: none;
         padding: 0px;
         width:100%;
+        height: auto;
         border:0px;
         margin:0px;
     }
