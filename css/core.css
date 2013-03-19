@@ -250,7 +250,8 @@ table.discography td {
     font-size: 0.9em;
 }
 
-ul#showpics li {
+ul#showpics li,
+ul#pics li {
     float: left;
     width: 154px;
     height: 154px;
