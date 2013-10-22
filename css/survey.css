@@ -15,8 +15,11 @@ body {
 }
 
 h1 {
-	margin-left: 0px;
     margin-bottom: 16px;
+}
+
+h1.survey {
+		margin-left: 0px;
 }
 
 form .section {
