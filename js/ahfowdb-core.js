@@ -20,6 +20,7 @@ $(document).ready(function() {
     var temp = new Array("galaxie_500","luna","damon_and_naomi","dean_and_britta");
     
     
+if ($.prettyPhoto) {
     $("a[rel^='prettyPhoto']").prettyPhoto({
         social_tools: ' <div class="pp_social">\n\
                             <div class="twitter">\n\
@@ -33,7 +34,7 @@ $(document).ready(function() {
                             </div>\n\
                         </div>' /* html or false to disable */
     });
-
+}
     
     $("#frmSubmit").click(function(e) {
         e.preventDefault();
