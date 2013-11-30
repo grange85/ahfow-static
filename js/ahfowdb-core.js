@@ -53,7 +53,7 @@ if ($.prettyPhoto) {
     activeItem = $(".section:first");
     $(activeItem).addClass('active');
  
-    $(".section").click(function(){
+    $(".sections").click(function(){
         $(activeItem).animate({
             width: "0px"
         }, {
