@@ -2,7 +2,4 @@
   "name": "static.fullofwishes.co.uk",
   "description": "Static fow",
   "version": "0.0.1",
-  "scripts": {
-    "test": "node test.js"
-  }
 }
