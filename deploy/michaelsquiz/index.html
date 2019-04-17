@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Galaxie 500 Quiz!</title>
+        <meta name="Generator" content="HTMLed32 Version 2.0">
+        <meta name="Keywords" content="Galaxie 500,Galaxie 500,Galaxie 500,Galaxie 500,Galaxie,Galaxie 500 Quiz,Galaxie 500 Quiz,Dean Wareham,Damon Krukowski,Naomi Yang,music,band,Mike Lim,Michael Lim,Lim,mllim@itsa.ucsf.edu">
+        <meta name="Description" content="A quiz to test your knowledge of Galaxie 500!">
+        <meta name="Author" content="Mike Lim, Michael Lim, mllim@itsa.ucsf.edu">
+
+
+
+        <style>
+            body {
+                background-color: #ccf;
+            }
+
+            #wrapper {
+                width:976px;
+                margin:0 auto;
+                padding:5px;
+                background-color: #fff;
+            }
+            #banner {
+                width:966px;
+                height:400px;
+                padding:0px;
+                margin: 0px;
+                background-image:url('https://media.fullofwishes.co.uk/01-galaxie_500/pictures/copenhagen-976-400.jpg');
+                background-color: #ccc;
+            }
+
+            .dialog_overlay
+            {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background: #000000;
+                opacity: .55;
+                filter: alpha(opacity=55);
+                -moz-opacity: .55;
+                z-index: 101;
+                display: none;
+            }
+            .dialog
+            {
+                display: none;
+                position: fixed;
+                width: 380px;
+                height: 260px;
+                top: 50%;
+                left: 50%;
+                margin-left: -190px;
+                margin-top: -130px;
+                background-color: #ffffff;
+                border: 2px solid #336699;
+                padding: 8px;
+                z-index: 102;
+                font-family: Verdana;
+                font-size: 10pt;
+            }
+            .dialog .image {
+                float: right;
+                padding-left:4px;
+                padding-bottom: 4px;
+            }
+
+
+            .dialog img {
+                border: none;
+            }
+
+        </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-386732-5']);
+_gaq.push(['_setDomainName', 'fullofwishes.co.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+
+    <script type="text/javascript">
+
+        function showDialog(modal)
+        {
+            $("#overlay").show();
+            $("#resultpanel").fadeIn(300);
+
+            $("#overlay").click(function (e)
+            {
+                hideDialog();
+            });
+        }
+
+        function hideDialog() {
+            $("#overlay").hide();
+            $("#resultpanel").fadeOut(300);
+        }
+
+
+
+
+
+        $(document).ready(function() {
+            var fburlbase = "https://www.facebook.com/dialog/feed?app_id=137187479629913"
+            var fbredirect="redirect_uri=https://www.fullofwishes.co.uk/";
+            var fbname = "name="+encodeURI('A Head Full of Wishes: Michael\'s Quiz');
+            var fbcaption = "caption=https://static.fullofwishes.co.uk/michaelsquiz";
+            var fblink = "link=https://static.fullofwishes.co.uk/michaelsquiz"
+
+            $("#btnClose").click(function (e)
+            {
+                hideDialog();
+                e.preventDefault();
+            });
+
+
+            $("#resultpanel").keydown(function(e){
+                if (e.keyCode=='27'){
+                    hideDialog();
+                }});
+
+            $("#quiz").submit(function(event){
+                event.preventDefault();
+                var total = 0;
+                $("input:checked").each(function() {
+                    total += parseInt($(this).attr("value"));
+                })
+                var rating = Math.floor(total/20);
+
+                var pic = 'https://media.fullofwishes.co.uk/00-misc/ahfow-web/ahfow-petal-rating-'+rating+'.png';
+                var fbpicture = "picture="+encodeURI(pic);
+                var desc = $("#quiz input[name='rating"+Math.floor(total/20)+"']").attr("value");
+                var fbdesc = "description=score: "+total+"/100. "+encodeURI(desc);
+                var twstatus = "I scored " + total + "/100 in the Galaxie 500 quiz on @ahfow. https://static.fullofwishes.co.uk/michaelsquiz/";
+                var fbpost = fburlbase+'&'+fbname+'&'+fblink+'&'+fbcaption+'&'+fbdesc+'&'+fbpicture+'&'+fbredirect;
+                var twpost = "https://twitter.com/home?status=" + encodeURI(twstatus);
+                $("div#resultpanel").html('<img src="'+pic+'" class="image"/><p><strong>'+total+'/100</strong></p><p>'+desc+'</p><p>Post your result: <a href="'+fbpost+'"><img src="https://media.fullofwishes.co.uk/00-misc/chrome/facebook-03.png" width="50" alt="post your result to facebook"/></a><a href="'+twpost+'"><img src="https://media.fullofwishes.co.uk/00-misc/chrome/twitter-03.png" width="50" alt="post your result to twitter"/></a></p>');
+                showDialog(true);
+
+            });
+        });
+    </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h2 id="banner">The Galaxie 500 Quiz</h2>
+            <p>Way back in 1997 Galaxie 500 Mailing list member Michael created this quiz - I haven't changed anything about it just shined it up slightly. The scoring system gives marks for wrong but almost right answers.</p>
+            <p>Are you a Galaxie 500 Freak?  Think you know a thing or two about the pseudolegendary trio of Dean Wareham, Damon Krukowski, and Naomi Yang? Take the Galaxie 500 Quiz and prove it by answering these 25 questions! If you're a real bad-ass, you won't even have to reach for your boxset to answer these!  After you get back your score, just hit the "back" button on your broser and <A HREF="mailto:mllim@itsa.ucsf.edu">email me</A> to let me know what you think, or try to challenge me with <em>your</em> trivia! Try me!</p>
+
+            <form id="quiz">
+
+                <input type="hidden" name="questions" value="25">
+                <input type="hidden" name="max_score" value="100">
+                <input type="hidden" name="style" value="0">
+
+                <input type="hidden" name="ratings" value="5">
+                <input type="hidden" name="rating0" value="Sorry, your knowledge of Galaxie 500 is pretty pathetic...this quiz is about the BAND Galaxie 500, not the car...Give them a listen, I suggest starting with On Fire">
+                <input type="hidden" name="rating1" value="Looks like you've maybe heard a couple Galaxie 500 songs or maybe you have a friend that likes them...now go get all the albums and read the liner notes! They're finally back in print and available everywhere, so what's your excuse?!?!">
+                <input type="hidden" name="rating2" value="Well, at least you've listened to a little of their music and got a few right...but I think you need to listen a bit more...go get the boxset and lock yourself in a room with it until you can improve your score!">
+                <input type="hidden" name="rating3" value="You did alright. I take it you've got their records and you listen to them a lot...but I think you can improve your score...why don't you subscribe to the Galaxie 500 Mailing List?">
+                <input type="hidden" name="rating4" value="Great! You're almost as much as a freak as I am.  Do your friends think you are wierd because you listen to this boring music with a whiney singer? Don't listen to them, I love ya just the same! But, you STILL didn't quite make a perfect score...keep trying!">
+                <input type="hidden" name="rating5" value="Is that you Dean? Damon? Naomi? Is that you out there? You are a certified Galaxie 500 Freak! Your knowledge of Galaxie 500 is unrivaled. Drop me an email, and try to stump me with some of YOUR trivia!">
+
+                <ol>
+
+                    <li>What was the name of Dean and Damon's first band together?<br />
+                        <input type="radio" name="1" value="1">Souvenir<br />
+                        <input type="radio" name="1" value="0">The Paisley Underground<br />
+                        <input type="radio" name="1" value="4">Speedy and the Castanets<br />
+                        <input type="radio" name="1" value="0">Nova Rising
+                    </li>
+                    <li>Where did all three members of Galaxie 500 attend college?<br />
+                        <input type="radio" name="2" value="0">Berklee College of Music<br />
+                        <input type="radio" name="2" value="4">Harvard University<br />
+                        <input type="radio" name="2" value="0">U Mass, Boston<br />
+                        <input type="radio" name="2" value="0">Boston University
+                    </li>
+                    <li>What song did Naomi try to learn during her first bass lesson?<br />
+                        <input type="radio" name="3" value="4"><em>Atmosphere</em>-Joy Division<br />
+                        <input type="radio" name="3" value="0"><em>The Back of Love</em>-Echo and the Bunnymen<br />
+                        <input type="radio" name="3" value="1"><em>Leave Me Alone</em>-New Order<br />
+                        <input type="radio" name="3" value="0"><em>In Between Days</em>-The Cure
+                    </li>
+                    <li>What Galaxie 500 song has a reference to a highway near Boston?<br />
+                        <input type="radio" name="4" value="4"><em>Blue Thunder</em><br />
+                        <input type="radio" name="4" value="0"><em>Summertime</em><br />
+                        <input type="radio" name="4" value="0"><em>Parking Lot</em><br />
+                        <input type="radio" name="4" value="0"><em>Snowstorm</em>
+                    </li>
+                    <li>What T-shirt is Dean wearing in the video for <em>When Will You Come Home</em>?<br />
+                        <input type="radio" name="5" value="1">Spacemen 3<br />
+                        <input type="radio" name="5" value="0">Chemical Imbalance<br />
+                        <input type="radio" name="5" value="0">Beat Happening<br />
+                        <input type="radio" name="5" value="4">Shimmy Disc
+                    </li>
+                    <li>Where did Galaxie 500 play their first gig?<br />
+                        <input type="radio" name="6" value="1">The Rat<br />
+                        <input type="radio" name="6" value="4">An apartment in NYC<br />
+                        <input type="radio" name="6" value="0">A high school gym<br />
+                        <input type="radio" name="6" value="0">The Pool Bar
+                    </li>
+                    <li>What does Damon's mom do for a living?<br />
+                        <input type="radio" name="7" value="0">Graphic artist<br />
+                        <input type="radio" name="7" value="0">Teaches history at NYU<br />
+                        <input type="radio" name="7" value="1">Corporate head-hunter<br />
+                        <input type="radio" name="7" value="4">Jazz singer
+                    </li>
+                    <li>What band has Galaxie 500 NOT recorded a cover of?<br />
+                        <input type="radio" name="8" value="0">The Sex Pistols<br />
+                        <input type="radio" name="8" value="4">The Dream Syndicate<br />
+                        <input type="radio" name="8" value="0">The Rutles<br />
+                        <input type="radio" name="8" value="0">Young Marble Giants
+                    </li>
+                    <li>What band did Dean go to see play on his prom night?<br />
+                        <input type="radio" name="9" value="0">The Ramones<br />
+                        <input type="radio" name="9" value="0">Blondie<br />
+                        <input type="radio" name="9" value="4">The B-52s<br />
+                        <input type="radio" name="9" value="1">The Clash
+                    </li>
+                    <li>What record label released the first Galaxie 500 single?<br />
+                        <input type="radio" name="10" value="4">Aurora Records<br />
+                        <input type="radio" name="10" value="0">Germanofon Records<br />
+                        <input type="radio" name="10" value="1">Rough Trade<br />
+                        <input type="radio" name="10" value="0">Shimmy Disc
+                    </li>
+                    <li>Which Bob is Damon's hero?<br />
+                        <input type="radio" name="11" value="4">Robert Wyatt<br />
+                        <input type="radio" name="11" value="0">Robert Dylan<br />
+                        <input type="radio" name="11" value="0">Robert DiNiro<br />
+                        <input type="radio" name="11" value="0">Robert Frost
+                    </li>
+                    <li>What effect was found in the studio during the recording of On Fire and used to great effect on <em>Snowstorm</em>?<br />
+                        <input type="radio" name="12" value="0">Echoplex Delay<br />
+                        <input type="radio" name="12" value="0">Big Muff Distortion<br />
+                        <input type="radio" name="12" value="4">Wah-wah pedal<br />
+                        <input type="radio" name="12" value="0">E-Bow
+                    </li>
+                    <li>What guest singer jumped on stage to perform <em>Rain</em> live with Galaxie 500?<br />
+                        <input type="radio" name="13" value="0">Sean Lennon<br />
+                        <input type="radio" name="13" value="4">Robyn Hitchcock<br />
+                        <input type="radio" name="13" value="0">Tom Verlaine<br />
+                        <input type="radio" name="13" value="0">Hugh Hopper
+                    </li>
+                    <li>Who is responsible for buying back Galaxie 500's contracts and orchestrating the wonderful reissues by Rykodisc?<br />
+                        <input type="radio" name="14" value="0">Dean Wareham<br />
+                        <input type="radio" name="14" value="4">Damon & Naomi<br />
+                        <input type="radio" name="14" value="0">Thurston Moore<br />
+                        <input type="radio" name="14" value="0">Kramer
+                    </li>
+                    <li>Who once worked as a "tugboat captain" and presumably inspired the lyrics to <em>Tugboat</em>?<br />
+                        <input type="radio" name="15" value="4">Sterling Morrison<br />
+                        <input type="radio" name="15" value="0">James Dean<br />
+                        <input type="radio" name="15" value="0">George Harrison<br />
+                        <input type="radio" name="15" value="0">Denton Welch
+                    </li>
+                    <li>What movie has a brief shot of Dean, Damon, and Naomi's alma mater, The Dalton School?<br />
+                        <input type="radio" name="16" value="0"><em>Love Story</em><br />
+                        <input type="radio" name="16" value="0"><em>Mean Streets</em><br />
+                        <input type="radio" name="16" value="0"><em>Dead Poet's Society</em><br />
+                        <input type="radio" name="16" value="4"><em>Manhattan</em>
+                    </li>
+                    <li>What Galaxie 500 song does Dean hyperventilate on?<br />
+                        <input type="radio" name="17" value="0"><em>When Will You Come Home</em><br />
+                        <input type="radio" name="17" value="0"><em>Temperature's Rising</em><br />
+                        <input type="radio" name="17" value="4"><em>Oblivious</em><br />
+                        <input type="radio" name="17" value="0"><em>Way Up High</em>
+                    </li>
+                    <li>Which well-known personality <em>may</em> have been instrumental in the formation of Galaxie 500?<br />
+                        <input type="radio" name="18" value="0">John F. Kennedy, Jr.<br />
+                        <input type="radio" name="18" value="4">Conan O'Brien<br />
+                        <input type="radio" name="18" value="1">Ric Ocasek<br />
+                        <input type="radio" name="18" value="0">Andy Warhol
+                    </li>
+                    <li>What kind of earrings is Naomi wearing on the cover of On Fire?<br />
+                        <input type="radio" name="19" value="0">Big stars<br />
+                        <input type="radio" name="19" value="1">Anchors<br />
+                        <input type="radio" name="19" value="0">Colorful flowers<br />
+                        <input type="radio" name="19" value="4">Circular spirals
+                    </li>
+                    <li>Who said, "Anybody who thinks Galaxie 500 are boring live should be shot."?<br />
+                        <input type="radio" name="20" value="4">Everett True<br />
+                        <input type="radio" name="20" value="0">Robert Christgau<br />
+                        <input type="radio" name="20" value="0">Kramer<br />
+                        <input type="radio" name="20" value="0">Robin Guthrie
+                    </li>
+                    <li>Which of the following is NOT a Galaxie 500 lyric?<br />
+                        <input type="radio" name="21" value="4"><em>"It's all over like a wave crashed on rocks"</em><br />
+                        <input type="radio" name="21" value="0"><em>"Had a dream all the cops were dead"</em><br />
+                        <input type="radio" name="21" value="0"><em>"My toes can talk, and they smile at me"</em><br />
+                        <input type="radio" name="21" value="0"><em>"I'm so glad that you were fired"</em>
+                    </li>
+                    <li>Where was Today recorded?<br />
+                        <input type="radio" name="22" value="0">Fort Apache, Boston<br />
+                        <input type="radio" name="22" value="1">Synchro Sound Studio, Boston<br />
+                        <input type="radio" name="22" value="0">Naomi's parents' house in NYC<br />
+                        <input type="radio" name="22" value="4">Noise New York
+                    </li>
+                    <li>What was Dean's major in college?<br />
+                        <input type="radio" name="23" value="4">Social Science<br />
+                        <input type="radio" name="23" value="0">Literature<br />
+                        <input type="radio" name="23" value="1">Biochemistry/Chemistry<br />
+                        <input type="radio" name="23" value="0">Philosophy
+                    </li>
+                    <li>Who plays sax on Decomposing Trees and Blue Thunder?<br />
+                        <input type="radio" name="24" value="1">Albert Ayler<br />
+                        <input type="radio" name="24" value="4">Ralph Carney<br />
+                        <input type="radio" name="24" value="0">Clarence Clemons<br />
+                        <input type="radio" name="24" value="0">Miles Krukowski
+                    </li>
+                    <li>Where was Galaxie 500's final performance?<br />
+                        <input type="radio" name="25" value="4">Maine<br />
+                        <input type="radio" name="25" value="0">New York City<br />
+                        <input type="radio" name="25" value="0">Boston<br />
+                        <input type="radio" name="25" value="0">Copenhagen
+                    </li>
+                </OL>
+                <input type="submit"><input type="reset">
+            </form>
+            <p><strong><em>Galaxie 500 Quiz Written by Michael L. Lim on June 10, 1997.</em></strong></p>
+
+        </div>
+
+        <div id="resultpanel" class="dialog"></div>
+        <div id="overlay" class="dialog_overlay"></div>
+    </body>
+</html>
+
+
