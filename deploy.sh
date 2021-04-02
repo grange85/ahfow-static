@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -euo pipefail
 
-echo "Deploying A Head Full of Wishes database"
+echo "Deploying A Head Full of Wishes static/legacy content"
 
 source _cloudfront-distribution-id
 
