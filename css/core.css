@@ -1,0 +1,543 @@
+body {
+    background-color: #ccc;
+    overflow-y:scroll;
+}
+
+div#outer_container {
+    width: 992px;
+    background-color: #fff;
+    color:#333;
+    padding:8px;
+    margin:24px auto;
+    border: 1px solid #336;
+}
+
+div#inner_container {
+
+
+}
+
+div#header {
+
+    color:#fff;
+    background-color: #000080;
+    background-image: url('http://media.fullofwishes.co.uk/images/misc/aheadfullofdata.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px;
+    width:992px;
+    height:80px;
+
+}
+
+
+h1 {
+    margin-left: -10000px;
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 8px 0px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.0em;
+    margin: 8px 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+em {
+    font-style: italic;
+
+}
+
+#content_wrap p,
+#content_wrap li{
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+
+.richtext ul {
+    list-style-type: circle;
+    margin-left: 32px;
+}
+
+.richtext li {
+    padding-left:4px;
+}
+
+
+ul.menu {
+    color:#fff;
+    width: 992px;
+}
+
+
+ul.menu>li>p>a:link, ul.menu>li>p>a:active, ul.menu>li>p>a:visited, ul.menu>li>p>a:hover
+
+{
+    color: #fff;
+    text-decoration:none;
+}
+
+ul.menu>li>p>a:hover
+{
+    text-decoration:underline;
+}
+
+ul.menu>li
+{
+    float:left;
+    color:#fff;
+    text-align:left;
+}
+
+ul.menu>li>p
+{
+    padding:8px;
+}
+
+.level0 {
+    background-color: #333;
+}
+
+.level1 {
+    background-color:#444;
+}
+.level2 {
+    background-color:#555;
+}
+
+ul.menu>li.active {
+    background-color: #399;
+}
+
+#content_wrap {
+    background-color: #fff;
+    width:992px;
+}
+
+#content_left {
+    background-color: #fff;
+    float:left;
+    padding: 8px;
+    width: 748px;
+    /*    border-right: 1px solid #336*/
+}
+
+#content_left p {
+    margin-top:8px;
+    margin-bottom:4px;
+}
+
+
+#content_left>ul {
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+
+}
+
+#content_left>ul>li {
+    line-height:1.3em;
+}
+
+
+#content_right {
+    float:left;
+    padding: 8px;
+    width: 212px;
+
+}
+
+#footer {
+    margin:8px 4px 0px 4px;
+    border-top: 1px solid #336;
+    padding:8px;
+    background-color: #fff;
+    width:970px;
+}
+
+#footer_left {
+    background-color: #fff;
+    float:left;
+    width: 764px;
+}
+
+#footer_right {
+    float:left;
+    width: 228px;
+    background-color: #cde;  
+}
+
+#footer li {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+div.imagebox_right {
+    float:right;
+    margin-left: 8px;
+    padding: 8px;
+    border: 1px solid #336;
+    background-color: #EEE;
+    text-align:center;
+}
+
+div.artist_box {
+    width:723px;
+    border: 1px solid #336;
+    background-color: #EEE;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+div.artist_box ul {
+    list-style-type:none;
+
+}
+
+div.artist_imagebox_left {
+    float:left;
+    margin-right:8px;
+}
+
+
+div.imagebox_right>p {
+    font-style: italic;
+}
+
+div#content_right ul {
+    margin: 8px 0px 16px 0px;
+}
+
+p.backtotop {
+    text-align:right;
+    font-size:0.7em;
+
+}
+
+table.gigography,
+table.discography {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.gigography th ,
+table.discography th {
+    padding:4px;
+    border: 1px solid #ccc;
+    text-align:left;
+    font-weight:bold;
+    font-size: 0.9em;
+}
+
+table.gigography td ,
+table.discography td {
+    padding:4px;
+    border: 1px solid #ccc;
+    text-align:left;
+    font-size: 0.9em;
+}
+
+ul#showpics li,
+ul#pics li {
+    float: left;
+    width: 154px;
+    height: 154px;
+    padding: 2px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+        border:0px;
+        margin:0px;
+    }
+    div#outer_container {
+        width: auto;
+        background-color: #fff;
+        color:#333;
+        border:0px;
+        margin:0px;
+    }
+    div#header {
+        color:#fff;
+        background-color: #000080;
+        background-image: none;
+        padding: 0px;
+        width:100%;
+        height: auto;
+        border:0px;
+        margin:0px;
+    }
+    h1 {
+        margin-left: 0px;
+        font-size: 2.3em;
+    }
+    h2 {
+        font-size: 1.6em;
+        margin: 8px 0px;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin: 8px 0px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 1.0em;
+        margin: 8px 0px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+
+    em {
+        font-style: italic;
+
+    }
+
+    #content_wrap p,
+    #content_wrap li{
+        line-height: 1.4em;
+        font-size: 0.9em;
+    }
+
+    .richtext ul {
+        list-style-type: disc;
+        margin-left: 8px;
+    }
+
+    .richtext li {
+        padding-left:4px;
+    }
+
+
+    ul.menu {
+        color:#fff;
+        width: auto;
+    }
+
+
+    ul.menu>li>p>a:link, ul.menu>li>p>a:active, ul.menu>li>p>a:visited, ul.menu>li>p>a:hover
+
+    {
+        color: #fff;
+        text-decoration:none;
+    }
+
+    ul.menu>li>p>a:hover
+    {
+        text-decoration:underline;
+    }
+
+    ul.menu>li
+    {
+        float:none;
+        color:#fff;
+        text-align:left;
+    }
+
+    ul.menu>li>p
+    {
+        padding:8px;
+    }
+
+    .level0 {
+        width: 33%!important;
+        float: left;
+        background-color: #333;
+    }
+
+    .level1 {
+        width: 33%!important;
+        float: left;
+        background-color:#444;
+    }
+    .level2 {
+        width: 33%!important;
+        float: left;
+        background-color:#555;
+    }
+
+    ul.menu>li.active {
+        background-color: #399;
+    }
+
+    #content_wrap {
+        background-color: #fff;
+        width:100%;
+    }
+
+    #content_left {
+        background-color: #fff;
+        float:none;
+        border:0px;
+        margin:0px;
+        width: 100%;
+        /*    border-right: 1px solid #336*/
+    }
+
+    #content_left p {
+        margin-top:8px;
+        margin-bottom:4px;
+    }
+
+
+    #content_left>ul {
+        margin-left: 24px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+
+    }
+
+    #content_left>ul>li {
+        line-height:1.3em;
+    }
+
+
+    #content_right {
+        float:none;
+        border:none;
+        margin:none;
+        width: 100%;
+    }
+
+    #footer {
+        border:none;
+        margin:none;
+        background-color: #fff;
+        width:100%;
+    }
+
+    #footer_left {
+        background-color: #fff;
+        float:none;
+        width: 100%;
+    }
+
+    #footer_right {
+        display:none;
+    }
+
+    #footer li {
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+
+    div.imagebox_right {
+        float:none;
+        width: 100%;
+        margin: 0px;
+        padding: 2px;
+        border: none;
+        background-color: #EEE;
+        text-align:center;
+    }
+
+    div.imagebox_right img {
+    }
+
+
+    div.artist_box {
+        width:100%;
+        border:0px;
+        margin:0px;
+        background-color: #EEE;
+        padding: 8px;
+    }
+
+    div.artist_box ul {
+        list-style-type:none;
+
+    }
+
+    div.artist_imagebox_left {
+        width: 100%;
+        float:none;
+        margin-right:0px;
+    }
+
+
+    div.imagebox_right>p {
+        font-style: italic;
+    }
+
+    div#content_right ul {
+        margin: 0px 0px;
+    }
+
+    p.backtotop {
+        text-align:right;
+        font-size:0.7em;
+
+    }
+
+    table.gigography,
+    table.discography {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table.gigography th ,
+    table.discography th {
+        padding:4px;
+        border: 1px solid #ccc;
+        text-align:left;
+        font-weight:bold;
+        font-size: 0.9em;
+    }
+
+    table.gigography td ,
+    table.discography td {
+        padding:4px;
+        border: 1px solid #ccc;
+        text-align:left;
+        font-size: 0.9em;
+    }
+
+    ul#showpics li {
+        float: left;
+        width: auto;
+        height: auto;
+        padding: 0px;
+    }
+
+}
+
+/*
+@media only screen and (max-width: 480px) {
+    .level0 {
+        width: 50%!important;
+        float: left;
+        background-color: #333;
+    }
+
+    .level1 {
+        width: 50%!important;
+        float: left;
+        background-color:#444;
+    }
+
+    .level2 {
+        width: 100%!important;
+        float: none;
+        background-color:#555;
+    }
+
+}
+
+*/

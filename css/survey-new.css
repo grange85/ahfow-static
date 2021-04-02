@@ -1,0 +1,508 @@
+@CHARSET "UTF-8";
+/* 
+    Document   : survey-new
+    Created on : Nov 21, 2013
+    Author     : andy
+    Description:
+        Responsive survey results
+*/
+@CHARSET "UTF-8";
+/*Colors
+red: #9d0000
+gray: #d7dad3
+active gray: #b0b3ad
+End Colors*/
+
+/************Reset**************/
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,fieldset,legend,label,table,header,footer,nav,section
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+header,footer,nav,section,article,hgroup,figure {
+	display: block;
+}
+
+legend {
+	display: none;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+/************End Reset**************/
+
+/************Global**************/
+body {
+	font-family: 'Droid Sans', 'Calibri', 'Lucida Grande', 'Trebuchet MS',
+		'Helvetica Neue', 'Arial', sans-serif;
+	color: #000;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #7f7f7f;
+}
+
+a:hover,a:focus {
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	outline: 0;
+}
+
+h1 {
+	background-color: #003;
+	color: #fff;
+	font: normal 2.3em/1.5 'Droid Sans', 'Calibri', 'Lucida Grande',
+		'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif;
+	padding: 128px 8px 8px;
+	margin-bottom: 0;
+	background: #003
+		url(http://media.fullofwishes.co.uk.s3.amazonaws.com/00-misc/survey/survey-background-1.jpg)
+		center center no-repeat;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: bold;
+	padding: 8px;
+	margin: 8px 0 0 0;
+	text-align: left;
+}
+
+h3 {
+	padding: 8px;
+	font-size: 2em;
+	font-style: italic;
+	margin: 0;
+	font-weight: normal;
+}
+
+p {
+	/*	margin: 0 0 1em;*/
+	
+}
+
+#outer_container {
+	
+}
+
+#inner_container {
+	margin: 0 auto;
+	max-width: 960px;
+	background-color: #fff;
+	padding: 0 8px;
+}
+
+#survey_results_menu {
+	width: auto;
+	background-color: #333;
+	color: #fff;
+	border-bottom: 8px solid #cce;
+}
+
+.summary_section {
+	width: 50%;
+	float: left;
+}
+
+#summary table {
+	width: 100%;
+}
+
+#summary th {
+	font-weight: bold;
+}
+
+#summary td,#summary th {
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+
+/************End Global**************/
+#survey_years_box {
+	float: right;
+}
+
+.customSelect {
+	/* This is the default class that is used */
+	background: #fff url(http://i48.tinypic.com/2u7rpec.png) right center
+		no-repeat;
+	/*    width:175px;
+    line-height: 1.125em;*/
+	padding: 6px;
+	background-color: #ccc;
+	color: #333;
+}
+
+.customSelect.customSelectHover {
+	/* Styles for when the select box is hovered */
+	
+}
+
+.customSelect.customSelectOpen {
+	/* Styles for when the select box is open */
+	
+}
+
+.customSelect.customSelectFocus {
+	/* Styles for when the select box is in focus */
+	
+}
+
+.customSelect.customSelectDisabledOption {
+	/* Styles for when the selected item is a disabled one */
+	
+}
+
+.customSelect.customSelectDisabled {
+	/* Styles for when the select box itself is disabled */
+	
+}
+
+.customSelectInner {
+	/* You can style the inner box too */
+	
+}
+
+div.favealbums {
+	float: left;
+	width: 66%;
+}
+
+div.favetracks {
+	float: left;
+	width: 34%;
+}
+
+div.favealbums>div,div.favetracks>div {
+	padding: 0px 4px;
+}
+
+/************Classes**************/
+div.surveyalbumbox {
+	background-color: #fff;
+	padding: 0px;
+	border: 1px solid #000;
+	margin: 0px 0px 8px;
+}
+
+div.albumheader {
+	background-color: #003;
+	background: #003
+		url(http://media.fullofwishes.co.uk.s3.amazonaws.com/00-misc/survey/survey-background-1.jpg)
+		center bottom no-repeat;
+	color: #fff;
+}
+
+li.first {
+	font-size: 1.7em;
+}
+
+div.trackbox {
+	margin-bottom: 2px;
+}
+
+div.votesbox {
+	float: left;
+	text-align: center;
+	background-color: #003;
+	color: #fff;
+	padding: 4px;
+	min-width: 72px;
+}
+
+li.first span {
+	font-size: 0.7em;
+}
+
+div.trackvotes {
+	float: left;
+	text-align: center;
+	background-color: #003;
+	color: #fff;
+	padding: 2px;
+	min-width: 42px;
+}
+
+div.trackname {
+	float: left;
+	padding: 2px 2px 2px 8px;
+}
+
+div.votesbox>span {
+	font-size: 3em;
+}
+
+.surveyalbumdetails {
+	/*	min-width: 440px;*/
+	width: 100%;
+}
+
+.surveyalbumdetails>p {
+	float: left;
+	font-size: 3em;
+	padding: 4px 8px;
+}
+
+.albumimagebox {
+	float: left;
+	width: 50%;
+}
+
+.albumimagebox>img {
+	width: 100%;
+}
+
+.albumlinks {
+	float: left;
+	width: 50%;
+}
+
+div.bandcamp {
+	padding: 0;
+}
+
+.album_title a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.album_title a:hover {
+	color: #ffc;
+}
+
+.metalinks {
+	/*	float:left;*/
+	padding: 4px;
+	font-size: 0.9em;
+
+}
+
+.metalinks a {
+	line-height: 1.4em;
+	text-decoration: none;
+	padding: 4px;
+	color: #009;
+}
+
+.metalinks a:hover {
+	text-decoration: underline;
+	color: #336;
+}
+
+.btn {
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 6px;
+	position: relative;
+	background-color: #333;
+	vertical-align: middle;
+	color: #7F7F7F;
+	border-right: 1px solid #7F7F7F;
+}
+
+.btn:hover,.btn:focus,.active {
+	background-color: #cce;
+	color: #333;
+	border-right: 1px solid #333;
+}
+
+/************End Classes**************/
+
+/************Structure**************/
+header {
+	
+}
+
+header a:hover,header a:focus {
+	
+}
+
+ul.tabs {
+	
+}
+
+ul.tabs li {
+	
+}
+
+p.album_title {
+	
+}
+
+.artist_container {
+	padding-top: 48px;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font: normal 1.9em/1.5 'Droid Sans', 'Calibri', 'Lucida Grande',
+			'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif;
+		padding-top: 32px;
+	}
+	@media screen and (max-width: 768px) {
+		h1 {
+			font: normal 1.7em/1.5 'Droid Sans', 'Calibri', 'Lucida Grande',
+				'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif;
+			padding: 4px;
+		}
+		h2 {
+			font-size: 1.3em;
+			padding: 4px;
+			margin: 4px 0 0 0;
+		}
+		h3 {
+			padding: 4px;
+			font-size: 1.1em;
+		}
+		div.favealbums {
+			
+		}
+		div.favetracks {
+			
+		}
+		div.favealbums>div,div.favetracks>div {
+			padding: 0px 4px;
+		}
+		.surveyalbumdetails {
+			/*	min-width: 440px;*/
+			width: 100%;
+		}
+		.surveyalbumdetails>p {
+			font-size: 1.7em;
+			padding: 4px 4px;
+		}
+		div.votesbox {
+			
+		}
+		li.first span {
+			font-size: 0.7em;
+		}
+		div.trackvotes {
+			
+		}
+		div.votesbox>span {
+			font-size: 1.4em;
+		}
+		.albumimagebox {
+			width: 100%;
+		}
+		.albumimagebox>img {
+			width: 100%;
+		}
+		.albumlinks {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 640px) {
+		#inner_container {
+			padding: 0;
+		}
+		div.albumbody>img {
+			width: 25%;
+		}
+		h1 {
+			font: normal 1.7em/1.5 'Droid Sans', 'Calibri', 'Lucida Grande',
+				'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif;
+			padding: 4px;
+		}
+		h2 {
+			font-size: 1.3em;
+			padding: 4px;
+			margin: 4px 0 0 0;
+		}
+		h3 {
+			padding: 4px;
+			font-size: 1.1em;
+		}
+		div.favealbums {
+			width: 100%;
+		}
+		div.favetracks {
+			width: 100%;
+		}
+		div.favealbums>div,div.favetracks>div {
+			padding: 0px 4px;
+		}
+		.surveyalbumdetails {
+			/*	min-width: 440px;*/
+			width: 100%;
+		}
+		.surveyalbumdetails>p {
+			font-size: 1.7em;
+			padding: 4px 4px;
+		}
+		div.votesbox {
+			
+		}
+		li.first span {
+			font-size: 0.7em;
+		}
+		div.trackvotes {
+			
+		}
+		div.votesbox>span {
+			font-size: 1.4em;
+		}
+		.albumimagebox {
+			float: left;
+			width: 30%;
+		}
+		.albumimagebox>img {
+			width: 100%;
+		}
+		.albumlinks {
+			float: left;
+			width: 70%;
+		}
+	}
+	@media only screen and (max-width: 540px) {
+		.btn {
+			cursor: pointer;
+			padding: 2px;
+			width: 100%;
+		}
+		.btn:hover,.btn:focus,.active {
+			color: #333;
+			border-right: 1px solid #333;
+		}
+		.albumimagebox {
+			width: 100%;
+		}
+		.albumimagebox>img {
+			width: 100%;
+		}
+		.albumlinks {
+			width: 100%;
+		}
+	}
+}
